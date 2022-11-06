@@ -6,20 +6,25 @@
         
         <div class="title pb-5">
             <h2 class="font-weight-bold">Login System</h2>
-            <span>Please login an existing user</span>
+            <% if(locals.logout){ %>
+                <div class="alert alert-success text-center">
+                    Logout Successful! :)
+                </div>
+           <% } %>
         </div>
         
         <form action="/route/login" method="POST" class="pt-3">
             <div class="form-group">
                 <input
                     type="email"
-                    class="form-control" placeholder="email"
+                    class="form-control"
+                    placeholder="email"
                     name="email"
                 />
                 <small class="form-text text-muted text-left"><a href="#">New? Register here!</a></small>
             </div>
         
-            <div class="form-group">
+            <div class="form-group mt-3">
                 <input
                     type="password"
                     class="form-control"
@@ -28,7 +33,7 @@
                 />
             </div>
 
-            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="submit" class="btn btn-success mt-3 rounded-pill">Submit</button>
         </form>
 
     </div>
