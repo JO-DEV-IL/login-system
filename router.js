@@ -48,6 +48,11 @@ router.get('/logout', (req, res) => {
     })
 })
 
+//Register link
+router.get('/register', (req, res) => {
+    res.render('register')
+})
+
 
 //Export the router
 module.exports = router
