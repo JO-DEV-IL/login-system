@@ -1,6 +1,68 @@
 <%- include('header') -%>
 <%- include('styles') -%>
 
-<h2>Register form</h2>
+<div class="text-center center-div">
+    <div class="container">
+        <h1>Registration Form</h1>
+
+        <form action="#" method="POST">
+            <div class="form-group mt-3">
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your first name"
+                    name="firstName"
+                />
+            </div>
+
+            <div class="form-group mt-3">
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your last name"
+                    name="lastName"
+                />
+            </div>
+
+            <div class="form-group mt-3">
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Choose a username"
+                    name="userName"
+                />
+            </div>
+
+            <div class="form-group mt-3">
+                <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email address"
+                    name="email"
+                />
+            </div>
+
+            <div class="form-group mt-3">
+                <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Choose a password"
+                    name="password"
+                />
+            </div>
+
+            <div class="form-group mt-3">
+                <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Confirm your password"
+                    name="confirm"
+                />
+            </div>
+
+            <button type="submit" class="btn btn-success mt-3 rounded-pill">Register</button>
+        </form>
+    </div>
+</div>
 
 <%- include('footer') -%>
